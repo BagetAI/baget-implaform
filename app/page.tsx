@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import CountdownTimer from "@/components/CountdownTimer";
 import SavingsCalculator from "@/components/SavingsCalculator";
+import CompatibilityTool from "@/components/CompatibilityTool";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
               <a href="#problem" className="hover:text-brand-secondary transition-colors">Efficiency</a>
               <a href="#workflow" className="hover:text-brand-secondary transition-colors">Workflow</a>
               <a href="#roi" className="hover:text-brand-secondary transition-colors">ROI Calculator</a>
+              <a href="#compatibility" className="hover:text-brand-secondary transition-colors">Compatibility</a>
             </div>
             <a href="https://buy.stripe.com/test_3cIbJ0dHG6vw3Xe3ZN1ZS2e" className="bg-[#0A2540] text-white px-6 py-3 rounded-xl font-bold text-sm hover:bg-[#1e3a5a] transition-all shadow-xl shadow-blue-900/10 active:scale-[0.98]">
               Pre-order Pioneer Kit
@@ -123,6 +125,13 @@ export default function Home() {
       <section id="roi" className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <SavingsCalculator />
+        </div>
+      </section>
+
+      {/* Compatibility Tool Section */}
+      <section id="compatibility" className="py-24 bg-white relative">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <CompatibilityTool />
         </div>
       </section>
 
