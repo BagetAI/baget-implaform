@@ -26,7 +26,7 @@ export default function CompatibilityTool() {
     setFormStatus("loading");
 
     try {
-      const response = await fetch("https://baget.ai/api/public/databases/3a76e5e0-ac80-4ac8-ad3d-fe827f8ea526/rows", {
+      const response = await fetch("https://app.baget.ai/api/public/databases/3a76e5e0-ac80-4ac8-ad3d-fe827f8ea526/rows", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
